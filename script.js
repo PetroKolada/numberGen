@@ -35,7 +35,7 @@ inputSubmit.addEventListener("click", function(event){
         console.log("Вы угадали")
         endGame()
     }else{
-        tryCount =+ 1
+        tryCount += 1
         console.log("Вы не угадали")
         alert("Неверно >:(")
     }
