@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="game">
+            <div class="title">
+                <span class="main_title">Угадай число</span>
+                <span class="under_title">Компьютер загадал число, попробуй его угадать!</span>
+            </div>
+            <div class="main_hero">
+                <input type="text" class="hero_input ui" placeholder="Сюда вводится число" id="inputNumber">
+                <button class="hero_submit ui" id="inputSubmit">Проверить</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="end">
+        <span class="end__title">Вы выйграли!</span>
+        <div class="end_textSelection">
+            <span class="end__text">Число - </span>
+            <span class="Number" id="guessedNumber">0</span>
+        </div>
+        <div class="end_textSelection">
+            <span class="end__text">Попытки - </span>
+            <span class="Number" id="tryCount">0</span>
+        </div>
+        <button class="ui again__button">Играть снова</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
